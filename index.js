@@ -10,6 +10,7 @@ import roomRouter from "./routes/roomRoute.js";
 
 const app = express();
 dotenv.config();
+const PORT = process.env.PORT || 8800
 
 // Initial Connection to DB
 const connect = async () => {
@@ -50,7 +51,7 @@ app.use((err, req, res, next) => {
     });
 });
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
     connect();
     console.log("Connected to Backend.")
 })
