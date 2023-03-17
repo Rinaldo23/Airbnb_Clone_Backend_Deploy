@@ -25,6 +25,7 @@ hotelRouter.get("/countByCity", countByCity);
 // GET HOTELS BY TYPE
 hotelRouter.get("/countByType", countByType);
 
+//GEt HOTEL ROOM BY ID
 hotelRouter.get("/room/:id", getHotelRooms);
 
 
